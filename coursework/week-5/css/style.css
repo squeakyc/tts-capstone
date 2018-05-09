@@ -1,0 +1,28 @@
+h3{
+	color: #880088;
+}
+
+.column-half{
+	border: solid 1px red;
+	width: calc(50% - 32px);
+	float: left;
+	padding: 15px;
+}
+
+.column-fourth{
+	border: solid 1px red;
+	width: calc(25% - 32px);
+	float: left;
+	padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+		/* MOBILE ONLY */
+		body {
+        background-color: lightblue;
+    }
+
+		.column-half, .column-fourth{
+			width: calc(100% - 32px);
+		}
+}
