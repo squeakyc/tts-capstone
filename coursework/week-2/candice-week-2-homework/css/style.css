@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+
+body{
+
+	background-image: url(../img/vintage.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: whitesmoke;
+	font-family: 'Acme', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+a{
+	color: aqua;
+	font-size: 18px;
+}
+
+header{
+	text-align: center;
+	background-color: rgba(10,0,20,.75);
+	margin: 40px 300px;
+	padding: 20px;
+}
+
+h1{
+	text-shadow: 2px 2px 6px #000;
+}
+
+h2{
+	text-shadow: 2px 2px 6px #000;
+}
+
+h3{
+	text-shadow: 2px 2px 6px #000;
+}
+
+main{
+	background-color: rgba(0,0,0,.5);
+	padding: 30px;
+	margin: 50px;
+}
+
+footer{
+	color: black;
+}
+
+.section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.section2{
+	text-align: left;
+	font-size: 20px;
+}
+
+.list{
+
+	text-align: left;
+	font-size: 18px;
+}
+
+.riverbanks{
+	padding-right: 80px;
+}
+

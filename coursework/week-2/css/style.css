@@ -1,0 +1,168 @@
+/* Imports Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{
+	
+	/* THESES ARE EXAMPLES. IF 2 COMMANDS ARE GIVEN IN HTML, THE LAST ONE WINS, unless you say !important, but it's not good to use a lot  */
+
+	/* RGBA has transparency */
+	background-color: rgba(0,0,255,.25);
+	/* HEX code has solid color */
+	background-color: #00ff00;
+
+	
+	/* Some colors have words */
+	background-color: lightblue;
+
+	/* Background image  - Will automatically tile repeatedly */
+	background-image: url(../img/back.png) !important;
+	background-image: url(../img/image.jpg);
+
+	/* To make background NOT repeat, use no-repeat.  Here are 3 options */
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;
+	background-repeat: no-repeat;
+
+
+	/* Background size property */
+	background-size: 600px;
+	/* Covers entire screen responsively */
+	background-size: cover;
+	
+	/* Background position property */
+	background-position: bottom right;
+	background-position: top right;
+	background-position: center;
+
+	/* Background scroll */
+	background-attachment: fixed;
+	/* Combined with background-size: cover, you get full screen & dynamic */
+
+}	
+
+h3{
+	color: #0000ff;
+}
+
+h1{
+	/* Custom font from Google Fonts */
+	font-family: 'Indie Flower', cursive;
+}
+
+/* By default, all Headings & Paragraphs elements are display: block and all italics, etc. elements are display: inline */
+
+h2{
+	background-color: white;
+	/* Makes the element 100% wide */
+	display: block;
+
+}
+
+strong{
+	background-color: blue;
+	/* Floats content from left to right. Keeps content size - WIDTH IS THE SIZE OF THE CONTENT */
+	display: inline;
+
+}
+
+p{
+	/* Text Color */
+	color: #ffffff;
+	/* Font Size */
+	font-size: 24px;
+
+	/* Text Shadow - NO COMMAS */
+
+			/*    X    Y   BLUR   COLOR   */
+	text-shadow: 2px  2px   6px   #000;
+
+	/* Line Height */
+	line-height: 40px;
+
+	/* Dynamic Line Height (for example: you want the line height to be double of whatever the font size is */
+	/* em stands for the letter M, which in most typefonts fills a perfect square, so measuring in M's was used in old days */
+	line-height: 2em;	
+
+	/* TEXT ALIGNMENT */
+	text-align: right;
+	text-align: center;
+	text-align: left; */left is default*/
+
+	/* DISPLAY PROPERTIES */
+	display: inline;
+	display: none;
+	display: block;
+
+	/* TEXT OPACITY */
+	opacity: .95;
+
+
+}
+
+
+/* . means "Class." Class is a general classification of tags in HTML. */
+
+.intro{
+	background: black;
+
+	/* PADDING, BORDERS & MARGINS - options are Top, Left, Bottom & Right */
+	padding: 12px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+
+	border: solid 2px red;
+	border-top: dashed 3px green;
+	border-left: solid 3px blue;
+	border-right: solid 3px yellow;
+
+	margin: : 12px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+
+	/* Shortcut for padding & margins: all 4 directions same */
+	margin: 10 px;
+
+	/* Shortcut for padding & margins: Top-Bottom, Left-Right */
+	margin: 10px 20px;
+
+	/* Shortcut for padding & margins: all 4 sides (Clockwise - top, right, bottom, left) */
+	margin: 10px 30px 20px 40px;
+
+	/* CORNER RADIUS */
+	border-radius: 20px;
+	border-bottom-right-radius: 0px;
+
+}
+
+.intro-text{
+	font-size: 40px;
+}
+
+.big-letter{
+	font-size: 90px;
+	color: red;
+
+}
+
+/* # means ID. AN ID IS MORE SPECIFIC THAN A CLASS */
+#fade{
+	opacity: .5;
+}
+
+.container{
+	width: 100%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+
+	/* Limits the width, so with width 100%, it'll get to that, but not too big */
+	max-width: 900px;
+}
+
+
+
+
+
+
+
