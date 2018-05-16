@@ -1,3 +1,30 @@
 body{
-  background: blue;
+
+}
+
+// ### OLD EXAMPLE
+// .container{
+//   border: solid 1px black;
+// }
+//
+// .container-fluid{
+//   border: solid 1px red;
+// }
+
+// ### SASS OPTIMIZED EXAMPLE
+.border{
+  border: solid 1px black;
+}
+
+.container{
+  @extend .border;
+  &-fluid{
+    @extend .border;
+    border-color: red;
+  }
+}
+
+// shortcut for calling on all classes that start with "col" (includes .col-6, .col-12, etc.)
+[class^="col"]{
+  @extend .border;
 }

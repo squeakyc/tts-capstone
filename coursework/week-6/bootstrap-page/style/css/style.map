@@ -5,8 +5,8 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		"body{\n  background: blue;\n}\n"
+		"body{\n\n}\n\n// ### OLD EXAMPLE\n// .container{\n//   border: solid 1px black;\n// }\n//\n// .container-fluid{\n//   border: solid 1px red;\n// }\n\n// ### SASS OPTIMIZED EXAMPLE\n.border{\n  border: solid 1px black;\n}\n\n.container{\n  @extend .border;\n  &-fluid{\n    @extend .border;\n    border-color: red;\n  }\n}\n\n// shortcut for calling on all classes that start with \"col\" (includes .col-6, .col-12, etc.)\n[class^=\"col\"]{\n  @extend .border;\n}\n"
 	],
-	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,IAAK;CAClB",
+	"mappings": ";AAcA,AAAA,OAAO,EAIP,AAJA,UAIU,EAAV,AAJA,gBAIU,GASV,AAAA,AAbA,KAaC,EAAO,KAAK,AAAZ,EAbM;EACL,MAAM,EAAE,eAAgB;CACzB;;;AAED,AAAA,gBAAU,CAED;EAEL,YAAY,EAAE,GAAI;CACnB",
 	"names": []
 }
