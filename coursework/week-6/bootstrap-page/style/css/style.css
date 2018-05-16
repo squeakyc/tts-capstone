@@ -1,11 +1,2 @@
-/* line 15, /Users/Candice/Documents/GitHub/tts-capstone/coursework/week-6/bootstrap-page/style/sass/style.scss */
-.border, .container, .container-fluid, [class^="col"] {
-  border: solid 1px black;
-}
-
-/* line 21, /Users/Candice/Documents/GitHub/tts-capstone/coursework/week-6/bootstrap-page/style/sass/style.scss */
-.container-fluid {
-  border-color: red;
-}
 
 /*# sourceMappingURL=../css/style.map */
