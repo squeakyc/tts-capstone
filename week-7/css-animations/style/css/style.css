@@ -1,6 +1,112 @@
 /* line 1, /Users/Candice/Documents/GitHub - Web Design/tts-web-design-coursework/week-7/css-animations/style/sass/style.scss */
 body {
-  background: blue;
+  background-color: darkgreen;
+}
+
+/* line 5, /Users/Candice/Documents/GitHub - Web Design/tts-web-design-coursework/week-7/css-animations/style/sass/style.scss */
+.timeline, .sky, .sun {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/* line 11, /Users/Candice/Documents/GitHub - Web Design/tts-web-design-coursework/week-7/css-animations/style/sass/style.scss */
+.sky {
+  height: 600px;
+  width: 100%;
+  background-color: skyblue;
+  padding-top: calc(300px - 25px);
+  overflow: hidden;
+  animation-name: skylight;
+}
+
+/* line 23, /Users/Candice/Documents/GitHub - Web Design/tts-web-design-coursework/week-7/css-animations/style/sass/style.scss */
+.sun {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: sunset;
+}
+
+@-webkit-keyframes sunset {
+  0% {
+    background-color: white;
+    transform: translate(-50vw, 300px) scale(2, 2);
+  }
+  25% {
+    background-color: pink;
+  }
+  40% {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+  }
+  75% {
+    background-color: lavender;
+  }
+  100% {
+    background-color: white;
+    transform: translate(50vw, 300px) scale(2, 2);
+  }
+}
+
+@-webkit-keyframes skylight {
+  0% {
+    background-color: lightpink;
+  }
+  25% {
+  }
+  40% {
+    background-color: skyblue;
+  }
+  50% {
+  }
+  60% {
+    background-color: skyblue;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+/* CSS */
+/* line 108, /Users/Candice/Documents/GitHub - Web Design/tts-web-design-coursework/week-7/css-animations/style/sass/style.scss */
+.exampleClass {
+  animation-name: myFirstAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+}
+
+@-webkit-keyframes myFirstAnimation {
+  0% {
+    transform: rotate(0deg);
+    transform: translate(0px, 0px);
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: rotate(180deg);
+    transform: translate(0px, 10px);
+    transform: scale(2, 2);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: translate(0px, 20px);
+    transform: scale(3, 3);
+  }
 }
 
 /*# sourceMappingURL=../css/style.map */

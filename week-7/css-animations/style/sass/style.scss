@@ -1,3 +1,153 @@
 body{
-  background: blue;
+  background-color: darkgreen;
+}
+// these are the properties that both .sky and .sun share
+.timeline{
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.sky {
+  @extend .timeline;
+  height: 600px;
+  width: 100%;
+  background-color: skyblue;
+  // add padding to make the sun sit in the middle (300 px is half the sky & 25px is half the sun)
+  padding-top: calc(300px - 25px);
+  // hides elements that flow outside the sky
+  overflow: hidden;
+  animation-name: skylight;
+}
+
+.sun {
+  @extend .timeline;
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: sunset;
+
+}
+@-webkit-keyframes sunset {
+  // Sunrise
+  0% {
+    background-color: white;
+    // vw stands for VIEW WIDTH (view width of the browser window) Good for mobile responsive units
+    // fyi - vh stands for view height :)
+    transform:
+      translate(-50vw, 300px)
+      scale(2,2);
+  }
+  // Late morning
+  25% {
+    background-color: pink;
+  }
+  // Noonish
+  40% {
+    background-color: yellow;
+    // box-shadow: x axis, y axis, blur, color
+    box-shadow: 0 0 20px yellow;
+  }
+  // Noon
+  50% {
+    transform: translate(0px, 0px);
+  }
+  // Noonish
+  60% {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+  }
+  // Sunset
+  75% {
+    background-color: lavender;
+  }
+  // Night
+  100% {
+    background-color: white;
+    transform:
+      translate(50vw, 300px)
+      scale(2,2);
+
+  }
+}
+@-webkit-keyframes skylight {
+  // Sunrise
+  0% {
+    background-color: lightpink;
+  }
+  // Late morning
+  25% {
+
+  }
+  // Noonish
+  40% {
+    background-color: skyblue;
+  }
+  // Noon
+  50% {
+
+  }
+  // Noonish
+  60% {
+    background-color: skyblue;
+  }
+  // Sunset
+  75% {
+    background-color: orange;
+  }
+  // Night
+  100% {
+    background-color: purple;
+  }
+}
+/* CSS */
+// THE FOLLOWING IS JUST FOR NOTES - THIS CLASS IS NOT ACTUALLY IN THE RELATED HTML DOC
+.exampleClass {
+  // animation name - links the .class to an animation timeline (keyframe)
+  // MUST match the spelling of the timeline
+  animation-name: myFirstAnimation;
+  // This is the speed of the animation in seconds:
+  animation-duration: 5s;
+  // iteration asks "How many times do you want to repeat?"
+  // Can be a number or infinite
+  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
+  // defines whether an animation should be played forwards, backwards or in alternate cycles a.k.a. the direction you travel on the timeline
+  // POSSIBLE VALUES:
+  // normal: 0-100, then back to 0-100 (this is default)
+  // reverse: 100-0, then back to 100-0
+  // alternate: 0-100, then 100-0
+  // alternate-reverse: 100-0, then 0-100
+  animation-direction: normal;
+}
+// Here's the "timeline"
+@-webkit-keyframes myFirstAnimation {
+  0% {
+    // Transform: animates or moves an element.
+    // if a block element, the center of rotation will be the middle of the page!
+    transform: rotate(0deg);
+    // Transform by moving on the x and y axis by pxs or percentage.
+    transform: translate(0px,0px);
+    // Transforms by scaling the object on the x and y axis.
+    // Scale by units based on 1
+    // ex. Half scale = .5
+    // ex. No scale = 1
+    // ex. Double scale = 2
+    transform: scale(1,1);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform: translate(0px,10px);
+    transform: scale(2,2);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform: translate(0px,20px);
+    transform: scale(3,3);
+  }
 }
