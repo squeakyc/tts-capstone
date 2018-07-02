@@ -4,9 +4,9 @@ All coursework from Web Design course
 Week 1: HTML 
   * What is front-end development? 
   * HTML fundamentals 
-  ** Structure and Syntax 
-  ** Common elements 
-  ** Common page structure
+    * Structure and Syntax 
+    * Common elements 
+    * Common page structure
 
 Week 2: CSS 
   * Anatomy and structure 
