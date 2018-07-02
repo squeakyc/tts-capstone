@@ -42,8 +42,8 @@ Week 6: Intro to JavaScript and jQuery 
   * Common functions 
   * JS and the DOM 
   * jQuery 
-    ** Common uses 
-    ** Syntax and structure 
+    * Common uses 
+    * Syntax and structure 
 
 Week 7: Responsive Web Design 
   * What is RWD, and why should you keep it in mind 
@@ -57,8 +57,8 @@ Week 8: Bootstrap 
   * Why use a framework 
   * Setup 
   * Common uses 
-  ** Default styling 
-  ** Grid System 
-  ** Components 
+    * Default styling 
+    * Grid System 
+    * Components 
 
 
